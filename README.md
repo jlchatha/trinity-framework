@@ -46,13 +46,31 @@ No databases. No servers. Just markdown files that travel with your project.
 
 ## Quick Start
 
+### Path A — No terminal required
+
+Don't use a coding agent? No problem. Trinity works in Claude.ai Projects, ChatGPT, Gemini, or any chat interface.
+
+**[→ Start here: QUICKSTART-CLAUDE-AI.md](./QUICKSTART-CLAUDE-AI.md)**
+
+---
+
+### Path B — Full framework (coding agents)
+
+**One-liner install:**
 ```bash
-# Clone and setup (30 seconds)
+# Review first: https://github.com/jlchatha/trinity-framework/blob/v1.0/setup.sh
+curl -sSL https://raw.githubusercontent.com/jlchatha/trinity-framework/v1.0/setup.sh | bash
+```
+
+**Or clone and inspect:**
+```bash
 git clone https://github.com/jlchatha/trinity-framework.git
 cd trinity-framework
 ./setup.sh
+```
 
-# Start working
+**Then start working:**
+```bash
 cd ../trinity-apex-workspace
 claude  # or cursor, aider, etc.
 ```
