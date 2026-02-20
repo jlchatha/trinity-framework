@@ -107,6 +107,11 @@ At the end of sessions involving ongoing work, provide a status summary:
 This summary becomes context for the next session. The human operator may paste
 it into project knowledge or reference it at the start of the next conversation.
 
+### Session Deliverables
+When a session produces actionable outputs (lists, plans, specifications, shopping lists),
+consolidate them into a single structured summary at the end of the session.
+Format it as a standalone document the user can save or share.
+
 ---
 
 ## RECOVERY PROTOCOL
