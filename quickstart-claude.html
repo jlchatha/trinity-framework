@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude.ai Quick Start - Trinity Framework</title>
+    <link rel="stylesheet" href="docs/css/shadowrun-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="framework-float-badge">v1.0</div>
+
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <h1 class="logo-text">Trinity Framework</h1>
+                <span class="version-badge">v1.0.0</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="quickstart-claude.html" class="nav-link">Quick Start</a>
+                <a href="docs/index.html" class="nav-link">Documentation</a>
+                <a href="examples/personas/index.html" class="nav-link">Examples</a>
+                <a href="https://github.com/jlchatha/trinity-framework" class="nav-link">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            <div class="breadcrumbs">
+                <a href="index.html" class="breadcrumb-link">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-current">Claude.ai Quick Start</span>
+            </div>
+
+            <h1>Claude.ai Quick Start</h1>
+
+            <p class="glow-text"><strong>For users of Claude.ai Projects.</strong> No terminal. No install. Just paste and go.</p>
+
+            <h2>What This Is</h2>
+
+            <p>Trinity Framework gives your AI agent <strong>identity, memory across sessions, and operational discipline</strong> through a structured protocol you paste into your project instructions.</p>
+
+            <p>Without it, every conversation starts from zero. Your agent doesn't know your project, your preferences, or what you worked on yesterday. You re-explain everything, every time.</p>
+
+            <p>With Trinity, your agent reads its protocol at the start of every session and picks up where you left off.</p>
+
+            <h2>Setup (2 Minutes)</h2>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-folder-plus"></i> Step 1: Create a Project</h3>
+                    <p>In Claude.ai, go to <strong>Projects</strong> &rarr; <strong>Create Project</strong>. Name it after what you're building.</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-paste"></i> Step 2: Paste Your Protocol</h3>
+                    <p>Copy the template below into your project's <strong>Custom Instructions</strong> field. Edit the placeholder sections.</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-comments"></i> Step 3: Start Chatting</h3>
+                    <p>Open a new chat inside the project. Your agent will introduce itself and operate according to its protocol.</p>
+                </div>
+            </div>
+
+            <div class="note">
+                <p>That's it. No install, no dependencies, no terminal.</p>
+            </div>
+
+            <h2>Agent Protocol Template</h2>
+
+            <p>Paste this into your Claude.ai Project Instructions. Replace everything in <code>[brackets]</code> with your specifics.</p>
+
+            <pre><code># [AGENT NAME] &mdash; [Your Project Name]
+
+**Role**: [What this agent does &mdash; e.g., "Full-Stack Development Lead" or "Research Assistant"]
+**Project**: [Project name]
+**Framework**: Trinity Framework v1.0
+
+---
+
+## IDENTITY &amp; MISSION
+
+You are [AGENT NAME], a specialized AI assistant for [project description].
+Your primary mission is to [core objective].
+
+### Core Principles
+- Maintain continuity across conversations by referencing project knowledge
+- Follow established patterns and decisions unless explicitly told to change course
+- Escalate decisions that affect architecture, budget, or scope to the human operator
+- Document decisions and rationale so future sessions have context
+
+---
+
+## PROJECT CONTEXT
+
+### Current State
+[Describe where your project is right now. What's built, what's in progress, what's planned.]
+
+### Key Decisions Made
+[List important decisions so the agent doesn't re-litigate them.]
+- Decision 1: [What was decided and why]
+- Decision 2: [What was decided and why]
+
+### Tech Stack / Tools
+[List relevant technologies, platforms, or constraints.]
+
+---
+
+## OPERATIONAL PROTOCOLS
+
+### Session Start
+When a new conversation begins:
+1. Acknowledge your role and the current project state
+2. Reference any project knowledge documents for context
+3. Ask what the human operator wants to focus on this session
+
+### Working Style
+- [Your preferences &mdash; e.g., "Explain your reasoning before implementing"]
+- [Your preferences &mdash; e.g., "Keep responses concise unless I ask for detail"]
+- [Your preferences &mdash; e.g., "Always consider cost implications"]
+
+### Decision Authority
+- **You decide**: Routine implementation choices, formatting, code style
+- **Ask first**: Architectural changes, new dependencies, scope changes
+- **Never assume**: Budget commitments, timeline promises, external communications
+
+---
+
+## STATUS TRACKING
+
+At the end of sessions involving ongoing work, provide a status summary:
+
+**Format**:
+- What was accomplished this session
+- What's in progress
+- What's blocked or needs input
+- Recommended next steps
+
+This summary becomes context for the next session.
+
+---
+
+## RECOVERY PROTOCOL
+
+If you lose context or aren't sure where things stand:
+1. Read these instructions fully
+2. Check project knowledge documents for current state
+3. Ask the human operator: "Last time we worked on [X]. Should I continue from there, or are we shifting focus?"
+
+Never guess. Never fabricate project history. If you don't know, ask.</code></pre>
+
+            <h2>Your First Session</h2>
+
+            <p>After pasting the template and customizing it, start a new conversation in your project:</p>
+
+            <div class="terminal">
+                <div class="terminal-content">
+                    <strong style="color: var(--neon-green);">You:</strong> "Hey [agent name], let's get started. Review your instructions and confirm you understand the project."<br><br>
+                    <strong style="color: var(--neon-blue);">Agent:</strong> <em>(Should introduce itself, reference the project context you provided, and ask what to focus on.)</em><br><br>
+                    <strong style="color: var(--neon-green);">You:</strong> "Today I want to work on [specific task]."
+                </div>
+            </div>
+
+            <p>From here, your agent operates within the framework. It knows its role, respects decision boundaries, and tracks status across sessions.</p>
+
+            <h2>Making It Stick Across Sessions</h2>
+
+            <p>Claude.ai Projects persist your custom instructions, so every new conversation in that project starts with your agent protocol loaded. To maintain continuity:</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-database"></i> Option A: Project Knowledge</h3>
+                    <p>After a working session, ask your agent to generate a status summary. Save it as a document in your project's knowledge base.</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-clipboard"></i> Option B: Paste at Start</h3>
+                    <p>Copy the status summary from the end of your last session. Paste it at the beginning of your next conversation.</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-file-alt"></i> Option C: STATUS.md</h3>
+                    <p>Maintain a single "STATUS.md" document in your project knowledge that gets updated each session.</p>
+                </div>
+            </div>
+
+            <h2>Platform Comparison</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Where to Paste</th>
+                        <th>Persistence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Claude.ai Projects</strong></td>
+                        <td>Custom Instructions field</td>
+                        <td>Per-project</td>
+                    </tr>
+                    <tr>
+                        <td>ChatGPT</td>
+                        <td>Custom Instructions or GPT configuration</td>
+                        <td>Per-GPT</td>
+                    </tr>
+                    <tr>
+                        <td>Gemini</td>
+                        <td>Gems configuration</td>
+                        <td>Per-Gem</td>
+                    </tr>
+                    <tr>
+                        <td>Claude Code / Cursor</td>
+                        <td>AGENT.md file (use full framework)</td>
+                        <td>Per-workspace</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Graduating to the Full Framework</h2>
+
+            <p>This quick start gives you the core value: <strong>identity, context persistence, and operational discipline</strong>. The full Trinity Framework adds:</p>
+
+            <ul>
+                <li><strong>STATUS.md</strong>: Machine-readable project state that agents update automatically</li>
+                <li><strong>AUTO-COMPACT.md</strong>: Recovery protocol for context window resets</li>
+                <li><strong>Multi-agent coordination</strong>: Run multiple specialized agents on the same project</li>
+            </ul>
+
+            <div class="button-group">
+                <a href="https://github.com/jlchatha/trinity-framework" class="button"><i class="fab fa-github"></i> Full Framework</a>
+                <a href="quickstart-gemini.html" class="button"><i class="fas fa-gem"></i> Gemini Guide</a>
+                <a href="quickstart-chatgpt.html" class="button"><i class="fas fa-robot"></i> ChatGPT Guide</a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Trinity Framework v1.0 &copy; 2025-2026 | Licensed under MIT</p>
+            <p>Built for context-resilient AI agent workspaces</p>
+            <div class="framework-badge">PRODUCTION READY</div>
+        </div>
+    </footer>
+</body>
+</html>

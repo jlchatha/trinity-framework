@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Quick Start - Trinity Framework</title>
+    <link rel="stylesheet" href="docs/css/shadowrun-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="framework-float-badge">v1.0</div>
+
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <h1 class="logo-text">Trinity Framework</h1>
+                <span class="version-badge">v1.0.0</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="quickstart-claude.html" class="nav-link">Quick Start</a>
+                <a href="docs/index.html" class="nav-link">Documentation</a>
+                <a href="examples/personas/index.html" class="nav-link">Examples</a>
+                <a href="https://github.com/jlchatha/trinity-framework" class="nav-link">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            <div class="breadcrumbs">
+                <a href="index.html" class="breadcrumb-link">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-current">ChatGPT Quick Start</span>
+            </div>
+
+            <h1>ChatGPT Quick Start</h1>
+
+            <p class="glow-text"><strong>For users of ChatGPT and Custom GPTs.</strong> No terminal. No install. Just paste and go.</p>
+
+            <h2>What This Is</h2>
+
+            <p>Trinity Framework gives your AI agent <strong>identity, memory across sessions, and operational discipline</strong> through a structured protocol you configure in ChatGPT.</p>
+
+            <p>Without it, every conversation starts from zero. Your agent doesn't know your project, your preferences, or what you worked on yesterday. You re-explain everything, every time.</p>
+
+            <p>With Trinity, your agent reads its protocol at the start of every session and picks up where you left off.</p>
+
+            <h2>Two Setup Options</h2>
+
+            <div class="card-grid">
+                <div class="card apex-card">
+                    <h3 class="card-title"><i class="fas fa-robot"></i> Option A: Custom GPT (Recommended)</h3>
+                    <p>Best for dedicated project assistants with full protocol support. Create at <a href="https://chatgpt.com">chatgpt.com</a> &rarr; My GPTs &rarr; Create a GPT.</p>
+                    <p><strong>Requires:</strong> ChatGPT Plus/Team/Enterprise</p>
+                </div>
+
+                <div class="card analyst-card">
+                    <h3 class="card-title"><i class="fas fa-cog"></i> Option B: Custom Instructions</h3>
+                    <p>Quick setup that applies to all ChatGPT conversations. More limited but faster. Access via Settings &rarr; Personalization &rarr; Custom Instructions.</p>
+                    <p><strong>Available to:</strong> All users</p>
+                </div>
+            </div>
+
+            <h2>Option A: Custom GPT Setup (5 Minutes)</h2>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-plus-circle"></i> Step 1: Create a GPT</h3>
+                    <p>Go to <a href="https://chatgpt.com">chatgpt.com</a>. Click your profile &rarr; <strong>My GPTs</strong> &rarr; <strong>Create a GPT</strong>. Click the <strong>Configure</strong> tab.</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-edit"></i> Step 2: Configure</h3>
+                    <p><strong>Name:</strong> Your agent name (e.g., "ATLAS - Portfolio Project")<br>
+                    <strong>Instructions:</strong> Paste the Agent Protocol Template below</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-save"></i> Step 3: Save</h3>
+                    <p>Click <strong>Save</strong> (choose "Only me" for private use). Open your GPT and start working.</p>
+                </div>
+            </div>
+
+            <h2>Option B: Custom Instructions Setup (2 Minutes)</h2>
+
+            <p>Click your profile icon &rarr; <strong>Settings</strong> &rarr; <strong>Personalization</strong> &rarr; <strong>Custom Instructions</strong></p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="card-title">"What would you like ChatGPT to know about you?"</h3>
+                    <pre><code>I use Trinity Framework for AI agent protocols.
+My current project: [project name]
+My agent's name: [AGENT NAME]
+Current phase: [planning/development/testing]</code></pre>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">"How would you like ChatGPT to respond?"</h3>
+                    <p>Paste a condensed version of the protocol focusing on:</p>
+                    <ul>
+                        <li>Identity acknowledgment</li>
+                        <li>Decision authority boundaries</li>
+                        <li>Status tracking format</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Agent Protocol Template</h2>
+
+            <p>For Custom GPTs, paste this into the <strong>Instructions</strong> field. Replace everything in <code>[brackets]</code> with your specifics.</p>
+
+            <pre><code># [AGENT NAME] &mdash; [Your Project Name]
+
+**Role**: [What this agent does &mdash; e.g., "Full-Stack Development Lead" or "Research Assistant"]
+**Project**: [Project name]
+**Framework**: Trinity Framework v1.0
+
+---
+
+## IDENTITY &amp; MISSION
+
+You are [AGENT NAME], a specialized AI assistant for [project description].
+Your primary mission is to [core objective].
+
+### Core Principles
+- Maintain continuity across conversations by referencing project knowledge
+- Follow established patterns and decisions unless explicitly told to change course
+- Escalate decisions that affect architecture, budget, or scope to the human operator
+- Document decisions and rationale so future sessions have context
+
+---
+
+## PROJECT CONTEXT
+
+### Current State
+[Describe where your project is right now. What's built, what's in progress, what's planned.]
+
+### Key Decisions Made
+[List important decisions so the agent doesn't re-litigate them.]
+- Decision 1: [What was decided and why]
+- Decision 2: [What was decided and why]
+
+### Tech Stack / Tools
+[List relevant technologies, platforms, or constraints.]
+
+---
+
+## OPERATIONAL PROTOCOLS
+
+### Session Start
+When a new conversation begins:
+1. Acknowledge your role and the current project state
+2. Reference any uploaded knowledge files for context
+3. Ask what the human operator wants to focus on this session
+
+### Working Style
+- [Your preferences &mdash; e.g., "Explain your reasoning before implementing"]
+- [Your preferences &mdash; e.g., "Keep responses concise unless I ask for detail"]
+- [Your preferences &mdash; e.g., "Always consider cost implications"]
+
+### Decision Authority
+- **You decide**: Routine implementation choices, formatting, code style
+- **Ask first**: Architectural changes, new dependencies, scope changes
+- **Never assume**: Budget commitments, timeline promises, external communications
+
+---
+
+## STATUS TRACKING
+
+At the end of sessions involving ongoing work, provide a status summary:
+
+**Format**:
+- What was accomplished this session
+- What's in progress
+- What's blocked or needs input
+- Recommended next steps
+
+This summary becomes context for the next session.
+
+---
+
+## RECOVERY PROTOCOL
+
+If you lose context or aren't sure where things stand:
+1. Read these instructions fully
+2. Check any uploaded knowledge files for current state
+3. Ask the human operator: "Last time we worked on [X]. Should I continue from there, or are we shifting focus?"
+
+Never guess. Never fabricate project history. If you don't know, ask.</code></pre>
+
+            <h2>Your First Session</h2>
+
+            <p>After creating your GPT or setting Custom Instructions, start a conversation:</p>
+
+            <div class="terminal">
+                <div class="terminal-content">
+                    <strong style="color: var(--neon-green);">You:</strong> "Hey [agent name], let's get started. Review your instructions and confirm you understand the project."<br><br>
+                    <strong style="color: var(--neon-blue);">Agent:</strong> <em>(Should introduce itself, reference the project context you provided, and ask what to focus on.)</em><br><br>
+                    <strong style="color: var(--neon-green);">You:</strong> "Today I want to work on [specific task]."
+                </div>
+            </div>
+
+            <h2>Making It Stick Across Sessions</h2>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-upload"></i> For Custom GPTs: Knowledge Files</h3>
+                    <p>Upload a STATUS.md file to your GPT's knowledge. Update it periodically with current project state.</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-clipboard"></i> For All: Status at Start</h3>
+                    <p>Copy the status summary from the end of your last session. Paste it at the beginning of your next conversation.</p>
+                </div>
+            </div>
+
+            <h2>ChatGPT-Specific Tips</h2>
+
+            <ul>
+                <li><strong>Custom GPTs vs Custom Instructions:</strong> GPTs are better for dedicated project assistants. Custom Instructions are better for general enhancement across all chats.</li>
+                <li><strong>Knowledge Files:</strong> Custom GPTs support uploading files (PDFs, docs, code). Use this for project documentation, specs, or a running STATUS.md.</li>
+                <li><strong>Memory Feature:</strong> ChatGPT's Memory feature can complement Trinity protocols, but don't rely on it for critical project state &mdash; use explicit status tracking.</li>
+                <li><strong>Conversation History:</strong> ChatGPT Plus saves conversation history. You can reference prior chats, but explicit status summaries are more reliable.</li>
+            </ul>
+
+            <h2>Platform Comparison</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Setup Location</th>
+                        <th>File Upload</th>
+                        <th>Persistence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Claude.ai</td>
+                        <td>Project Instructions</td>
+                        <td>Yes</td>
+                        <td>Per-project</td>
+                    </tr>
+                    <tr>
+                        <td>Gemini</td>
+                        <td>Gem Instructions</td>
+                        <td>No</td>
+                        <td>Per-Gem</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ChatGPT</strong></td>
+                        <td><strong>GPT Configuration</strong></td>
+                        <td><strong>Yes</strong></td>
+                        <td><strong>Per-GPT</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Graduating to the Full Framework</h2>
+
+            <p>This quick start gives you the core value: <strong>identity, context persistence, and operational discipline</strong>. The full Trinity Framework adds:</p>
+
+            <ul>
+                <li><strong>STATUS.md</strong>: Machine-readable project state that agents update automatically</li>
+                <li><strong>AUTO-COMPACT.md</strong>: Recovery protocol for context window resets</li>
+                <li><strong>Multi-agent coordination</strong>: Run multiple specialized agents on the same project</li>
+            </ul>
+
+            <div class="button-group">
+                <a href="https://github.com/jlchatha/trinity-framework" class="button"><i class="fab fa-github"></i> Full Framework</a>
+                <a href="quickstart-claude.html" class="button"><i class="fas fa-comment-dots"></i> Claude Guide</a>
+                <a href="quickstart-gemini.html" class="button"><i class="fas fa-gem"></i> Gemini Guide</a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Trinity Framework v1.0 &copy; 2025-2026 | Licensed under MIT</p>
+            <p>Built for context-resilient AI agent workspaces</p>
+            <div class="framework-badge">PRODUCTION READY</div>
+        </div>
+    </footer>
+</body>
+</html>
