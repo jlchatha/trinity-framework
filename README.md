@@ -2,6 +2,9 @@
 
 **Context-resilient AI agent workspaces. No infrastructure required.**
 
+[![Website](https://img.shields.io/badge/Website-jlchatha.github.io-blue)](https://jlchatha.github.io/trinity-framework/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ---
 
 ## The Problem
@@ -50,7 +53,12 @@ No databases. No servers. Just markdown files that travel with your project.
 
 Don't use a coding agent? No problem. Trinity works in Claude.ai Projects, ChatGPT, Gemini, or any chat interface.
 
-**[→ Start here: QUICKSTART-CLAUDE-AI.md](./QUICKSTART-CLAUDE-AI.md)**
+**[→ Get Your Template](https://jlchatha.github.io/trinity-framework/get-started.html)** — Interactive template selector (2 clicks, copy, done)
+
+Or see platform-specific guides:
+- [Claude.ai Guide](https://jlchatha.github.io/trinity-framework/quickstart-claude.html)
+- [Gemini Guide](https://jlchatha.github.io/trinity-framework/quickstart-gemini.html)
+- [ChatGPT Guide](https://jlchatha.github.io/trinity-framework/quickstart-chatgpt.html)
 
 ---
 
