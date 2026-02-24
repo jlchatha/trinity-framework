@@ -10,8 +10,8 @@ https://jlchatha.github.io/trinity-framework/
 
 ## Contents
 
-- `index.html` - Homepage
-- `get-started.html` - Interactive template selector
+- `index.html` - Homepage (interactive template selector)
+- `about.html` - About page (philosophy and deep dive)
 - `quickstart-*.html` - Platform-specific quick start guides
 - `docs/` - Documentation pages
 - `examples/personas/` - Template gallery

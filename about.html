@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinity Framework v1.0</title>
+    <link rel="stylesheet" href="docs/css/shadowrun-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="framework-float-badge">v1.0</div>
+
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <h1 class="logo-text">Trinity Framework</h1>
+                <span class="version-badge">v1.0.0</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="docs/index.html" class="nav-link">Documentation</a>
+                <a href="examples/personas/index.html" class="nav-link">Examples</a>
+                <a href="https://github.com/jlchatha/trinity-framework" class="nav-link">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            <h1>Trinity Framework</h1>
+
+            <p class="glow-text"><strong>VERSION</strong>: 1.0.0 | <strong>STATUS</strong>: Production Ready | <strong>LICENSE</strong>: Apache 2.0</p>
+
+            <p>Trinity Framework creates <strong>context-resilient AI agent workspaces</strong>. No infrastructure required. Your agent maintains identity, remembers decisions, and picks up where you left off &mdash; every session.</p>
+
+            <h2>Why Trinity?</h2>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-brain"></i> Persistent Identity</h3>
+                    <p>Your agent knows who it is, what project it's working on, and its role. No more re-explaining context every conversation.</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-sync-alt"></i> Context Resilience</h3>
+                    <p>Survive context window resets. AUTO-COMPACT.md ensures your agent recovers gracefully when limits are hit.</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-shield-alt"></i> Decision Boundaries</h3>
+                    <p>Clear authority levels prevent your agent from making decisions it shouldn't. Ask first, never assume.</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-clipboard-check"></i> Status Tracking</h3>
+                    <p>Every session ends with a structured summary. Pick up exactly where you left off, every time.</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-rocket"></i> Zero Infrastructure</h3>
+                    <p>No databases, no servers, no complex setup. Just markdown files and your AI interface of choice.</p>
+                </div>
+            </div>
+
+            <h2>Get Started in 2 Minutes</h2>
+
+            <p>Trinity Framework works with all major AI platforms. Choose yours:</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-comment-dots"></i> Claude.ai</h3>
+                    <p>Use Projects to create persistent agent workspaces with custom instructions.</p>
+                    <a href="quickstart-claude.html" class="button">Claude Guide</a>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-gem"></i> Google Gemini</h3>
+                    <p>Use Gems to create custom AI assistants with your agent protocol.</p>
+                    <a href="quickstart-gemini.html" class="button">Gemini Guide</a>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-robot"></i> ChatGPT</h3>
+                    <p>Use Custom GPTs or Custom Instructions for persistent agent identity.</p>
+                    <a href="quickstart-chatgpt.html" class="button">ChatGPT Guide</a>
+                </div>
+            </div>
+
+            <div class="role-card analyst-card">
+                <div class="role-header">
+                    <span class="role-icon"><i class="fas fa-terminal"></i></span>
+                    <h3 class="role-name">Full Framework Setup</h3>
+                </div>
+                <p>For Claude Code, Cursor, Windsurf, or terminal-based workflows. Clone the repo and run the setup script to create a complete agent workspace.</p>
+                <a href="docs/index.html" class="button">Full Setup Guide</a>
+            </div>
+
+            <h2>The Protocol Files</h2>
+
+            <p>Trinity Framework is built on three core protocol files that work together:</p>
+
+            <div class="role-card">
+                <div class="role-header">
+                    <span class="role-icon"><i class="fas fa-id-card"></i></span>
+                    <h3 class="role-name">AGENT.md</h3>
+                </div>
+                <p><strong>Identity & Mission</strong> &mdash; Who is this agent? What's its role? What decisions can it make autonomously vs. what requires human approval?</p>
+            </div>
+
+            <div class="role-card">
+                <div class="role-header">
+                    <span class="role-icon"><i class="fas fa-tasks"></i></span>
+                    <h3 class="role-name">STATUS.md</h3>
+                </div>
+                <p><strong>Current State</strong> &mdash; What's in progress? What's blocked? What was accomplished? A living document that captures project momentum.</p>
+            </div>
+
+            <div class="role-card">
+                <div class="role-header">
+                    <span class="role-icon"><i class="fas fa-life-ring"></i></span>
+                    <h3 class="role-name">AUTO-COMPACT.md</h3>
+                </div>
+                <p><strong>Recovery Protocol</strong> &mdash; When the context window fills up, this file tells the agent how to recover and continue working without losing track.</p>
+            </div>
+
+            <h2>Example Templates</h2>
+
+            <p>Start with a proven template for your use case:</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-user-astronaut"></i> Solo Developer</h3>
+                    <p>Individual working on personal projects. Quick setup, clear boundaries, status tracking.</p>
+                    <a href="examples/personas/index.html#solo-developer" class="button">View Template</a>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-server"></i> DevOps Engineer</h3>
+                    <p>Infrastructure automation, deployments, cost optimization. Built-in safety guardrails.</p>
+                    <a href="examples/personas/index.html#devops-engineer" class="button">View Template</a>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-users"></i> Team Lead</h3>
+                    <p>Multi-agent coordination, task orchestration, blocker resolution.</p>
+                    <a href="examples/personas/index.html#team-lead" class="button">View Template</a>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-code-branch"></i> OSS Contributor</h3>
+                    <p>Open source contribution patterns, PR workflows, community standards.</p>
+                    <a href="examples/personas/index.html#oss-contributor" class="button">View Template</a>
+                </div>
+            </div>
+
+            <h2>Quick Install</h2>
+
+            <div class="terminal">
+                <div class="terminal-content">
+                    <span style="color: var(--neon-blue);">$</span> git clone https://github.com/jlchatha/trinity-framework.git<br>
+                    <span style="color: var(--neon-blue);">$</span> cd trinity-framework<br>
+                    <span style="color: var(--neon-blue);">$</span> chmod +x setup.sh<br>
+                    <span style="color: var(--neon-blue);">$</span> ./setup.sh ~/my-project-workspace<br>
+                    <span style="color: var(--neon-green);">&#10003;</span> Trinity workspace created successfully!<br>
+                    <span class="cursor"></span>
+                </div>
+            </div>
+
+            <div class="note">
+                <p><strong>No terminal?</strong> Use the platform-specific Quick Start guides above. Just copy and paste.</p>
+            </div>
+
+            <div class="button-group">
+                <a href="https://github.com/jlchatha/trinity-framework" class="button"><i class="fab fa-github"></i> GitHub Repository</a>
+                <a href="quickstart-claude.html" class="button"><i class="fas fa-comment-dots"></i> Claude</a>
+                <a href="quickstart-gemini.html" class="button"><i class="fas fa-gem"></i> Gemini</a>
+                <a href="quickstart-chatgpt.html" class="button"><i class="fas fa-robot"></i> ChatGPT</a>
+                <a href="examples/personas/index.html" class="button"><i class="fas fa-users"></i> Templates</a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Trinity Framework v1.0 &copy; 2024-2026 | Licensed under Apache 2.0</p>
+            <p>Built for context-resilient AI agent workspaces</p>
+            <div class="framework-badge">PRODUCTION READY</div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for terminal text
+        document.addEventListener('DOMContentLoaded', function() {
+            const terminalContent = document.querySelector('.terminal-content');
+            if (terminalContent) {
+                const lines = terminalContent.innerHTML.split('<br>');
+                terminalContent.innerHTML = '';
+
+                let i = 0;
+                function showLine() {
+                    if (i < lines.length) {
+                        terminalContent.innerHTML += lines[i] + (i < lines.length - 1 ? '<br>' : '');
+                        i++;
+                        setTimeout(showLine, 400);
+                    }
+                }
+                showLine();
+            }
+        });
+    </script>
+</body>
+</html>
