@@ -3,7 +3,7 @@
 **Context-resilient AI agent workspaces. No infrastructure required.**
 
 [![Website](https://img.shields.io/badge/Website-jlchatha.github.io-blue)](https://jlchatha.github.io/trinity-framework/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ---
 
@@ -158,7 +158,7 @@ This release provides the core protocol file system for a single AI agent. Futur
 
 ## License
 
-MIT License — see [LICENSE](LICENSE) for details.
+Apache 2.0 License — see [LICENSE](LICENSE) for details.
 
 ---
 
